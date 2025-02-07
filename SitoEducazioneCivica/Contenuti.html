@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Persone resilienti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Contenuti">
+        <div class="header">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <h1 class="title">Persone resilienti</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><a href="bocelli.html">Andrea Bocelli</a></h4>
+                    <img src="images/bocelli.jpg" alt="Andrea Bocelli" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <h4><a href="hawking.html">Stephen Hawking</a></h4>
+                    <img src="images/StephenHawking.jpg" alt="Stephen Hawking" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <h4><a href="zanardi.html">Alex Zanardi</a></h4>
+                    <img src="images/zanardi.jpg" alt="Alex Zanardi" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="background-container"></div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="Introduzione.html">Introduzione</a>
+            <a href="Contenuti.html">Persone resilienti</a>
+            <a href="Sitografia.html">Sitografia</a>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdown-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

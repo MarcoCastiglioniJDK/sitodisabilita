@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Introduzione</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Introduzione">
+        <div class="header">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <h1 class="title">Introduzione alla disabilità</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8" style="padding: 5rem; margin-top: 30rem;">
+                <p class="intro-text">
+                    Oggi parleremo di un tema che riguarda da vicino la nostra società: la disabilità.
+                    Spesso vista come una barriera invalicabile, è in realtà una condizione che richiede supporto, comprensione e adattamento. Non definisce una persona, ma è una parte della sua vita che può essere affrontata con la giusta attitudine e le risorse adeguate.
+                    Film come Quasi amici mostrano come l’amicizia possa superare ogni ostacolo: Philippe, paralizzato dal collo in giù, e il suo assistente Driss ci insegnano che la disabilità non impedisce di vivere con gioia e condivisione. La loro storia ricorda quanto sia importante non perdere mai la speranza.
+                    La disabilità è una sfida, non una condanna. Ognuno di noi può essere un alleato, un amico, un supporto. L’esempio di Stephen Hawking in La teoria del tutto dimostra che, nonostante le difficoltà, è possibile perseguire i propri sogni e lasciare il segno nel mondo. Non è la disabilità a definire una persona, ma il modo in cui affronta la vita.
+                    Se vogliamo una società più giusta, dobbiamo ricordare che l'inclusione è un diritto per tutti. Solo con il supporto reciproco possiamo creare un mondo più accogliente e solidale.
+                </p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="background-container"></div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="Introduzione.html">Introduzione</a>
+            <a href="Contenuti.html">Persone resilienti</a>
+            <a href="Sitografia.html">Sitografia</a>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdown-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

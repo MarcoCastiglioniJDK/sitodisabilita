@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="index">
+        <div class="header">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <h1>Benvenuti nel nostro sito web!</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-2"></div>
+            <div class="col-8" style="padding: 5rem; margin-top: 25rem;">
+                <p class="intro-text">
+                    Questo sito è dedicato alle persone con disabilità. Attraverso film, storie e testimonianze, 
+                    vogliamo mostrare come la forza interiore e la determinazione possano superare qualsiasi ostacolo. 
+                    La disabilità non è una condanna, ma una sfida che può essere affrontata con coraggio e speranza.
+                    Speriamo che le nostre pagine possano ispirarvi e farvi riflettere sulla bellezza della diversità e dell'inclusione.
+                </p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="quote-container">
+            <span class="italic-underline">– Noi siamo tutti diversi, per quanto brutta possa sembrarci la vita, c'è sempre qualcosa che uno può fare e con successo. Perché finché c'è vita... c'è SPERANZA! –</span>
+            <br>
+            <span class="italic-underline">Stephen Hawking</span>
+        </div>
+        <div class="background-container"></div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="Introduzione.html">Introduzione</a>
+            <a href="Contenuti.html">Persone resilienti</a>
+            <a href="Sitografia.html">Sitografia</a>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdown-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

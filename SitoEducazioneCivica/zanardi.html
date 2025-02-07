@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Zanardi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="header">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <h3 class="title">Alex Zanardi</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-start">
+                    <img src="images/zanardis.jpg" alt="Andrea Bocelli" class="img-fluid mt-5">
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        Alex Zanardi è un esempio straordinario di determinazione e resilienza, dimostrando che non è la disabilità a definire una persona, ma il modo in cui si affronta la vita. Ex pilota di Formula 1 e campione di auto, nel 2001 fu coinvolto in un terribile incidente durante una gara che gli costò l’amputazione di entrambe le gambe. Nonostante la tragedia, non si arrese e trasformò la sua vita, diventando un campione paralimpico di handbike, vincendo numerose medaglie olimpiche e mondiali.
+
+La sua storia è fonte di ispirazione perché, nonostante le difficoltà, ha saputo reinventarsi, raggiungendo traguardi incredibili grazie alla sua forza di volontà e alla passione per lo sport. Con il supporto delle persone che hanno creduto in lui, ha dimostrato che nessun ostacolo è insuperabile se affrontato con determinazione e coraggio.
+                        </p>
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <img src="images/zanardid.jpg" alt="Andrea Bocelli" class="img-fluid mb-5">
+                </div>
+            </div>
+        </div>
+        <div class="background-container"></div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="Introduzione.html">Introduzione</a>
+            <a href="Contenuti.html">Persone resilienti</a>
+            <a href="Sitografia.html">Sitografia</a>
+        </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdown-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

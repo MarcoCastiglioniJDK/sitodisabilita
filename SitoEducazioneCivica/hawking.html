@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Hawking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="header">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <h3 class="title">Stephen Hawking</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-start">
+                    <img src="images/hawkings.jpg" alt="Andrea Bocelli" class="img-fluid mt-5">
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        Stephen Hawking, nato l'8 gennaio 1942 a Oxford, è stato uno dei più grandi fisici e cosmologi della storia. A soli 21 anni, la sua vita cambiò radicalmente con la diagnosi di sclerosi laterale amiotrofica (SLA), una malattia neurodegenerativa che lo portò progressivamente alla paralisi totale. Nonostante fosse costretto a vivere su una sedia a rotelle e a comunicare tramite un sintetizzatore vocale, la sua mente brillante e la sua determinazione rimasero intatte, permettendogli di compiere scoperte rivoluzionarie sulla gravità quantistica e i buchi neri.
+
+Hawking non si lasciò mai definire dalla sua disabilità, ma la trasformò in una dimostrazione di resilienza, continuando a insegnare a Cambridge e a scrivere opere fondamentali come Dal Big Bang ai Buchi Neri: Breve Storia del Tempo, rendendo accessibili concetti complessi a milioni di persone.
+
+La sua straordinaria capacità di superare le barriere imposte dalla malattia lo rese un'icona di speranza e ispirazione per il mondo intero. Anche dopo la sua morte, il 14 marzo 2018, il suo messaggio continua a risuonare con forza: "La disabilità non è un limite, ma una condizione da affrontare con forza e passione."
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <img src="images/hawkingd.jpg" alt="Andrea Bocelli" class="img-fluid mb-5">
+                </div>
+            </div>
+        </div>
+        <div class="background-container"></div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="Introduzione.html">Introduzione</a>
+            <a href="Contenuti.html">Persone resilienti</a>
+            <a href="Sitografia.html">Sitografia</a>
+        </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdown-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

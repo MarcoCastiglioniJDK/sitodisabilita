@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Bocelli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="header">
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776; 
+            </div>
+            <h3 class="title">Andrea Bocelli</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-start">
+                    <img src="images/bocellis.jpg" alt="Andrea Bocelli" class="img-fluid mt-5">
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        Uno straordinario esempio che ci insegna come non sia la disabilità a definire una persona, ma piuttosto il modo in cui affronta la vita, è Andrea Bocelli, un illustre artista italiano. Fin dalla nascita, Andrea Bocelli è ipovedente a causa di un glaucoma congenito, una condizione che limita la vista, ma non la sua forza d’animo. A 12 anni, perde completamente la vista in seguito a un incidente mentre giocava a calcio. Tuttavia, la sua cecità non è mai stata un ostacolo per lui. Non solo ha conseguito una laurea in Giurisprudenza, ma ha anche intrapreso e portato a termine gli studi in canto lirico, sviluppando una carriera musicale che lo ha portato a scrivere e interpretare numerose opere. Il suo talento ha riscosso un enorme successo in tutto il mondo, portandolo a ricevere prestigiose onorificenze sia in Italia che all’estero.
+
+                        Per noi, Bocelli rappresenta un esempio di determinazione e resilienza. Nonostante la sua disabilità visiva, ha continuato a perseguire la sua passione per la musica con tenacia, sostenuto dalle persone che lo circondavano e che lo hanno sempre visto come un uomo capace, uguale agli altri, piuttosto che come qualcuno limitato dalla sua condizione. Grazie a questa visione e al suo impegno, è riuscito a raggiungere vette straordinarie, dimostrando che nulla può impedire a una persona di realizzare i propri sogni quando c’è passione e dedizione.
+                    </p>
+                </div>
+                <div class="col-md-4 d-flex align-items-end">
+                    <img src="images/bocellid.jpg" alt="Andrea Bocelli" class="img-fluid mb-5">
+                </div>
+            </div>
+        </div>
+        <div class="background-container"></div>
+        <div id="dropdown-menu" class="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="Introduzione.html">Introduzione</a>
+            <a href="Contenuti.html">Persone resilienti</a>
+            <a href="Sitografia.html">Sitografia</a>
+        </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('dropdown-menu');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
